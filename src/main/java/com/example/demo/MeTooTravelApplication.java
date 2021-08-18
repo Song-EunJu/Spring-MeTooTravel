@@ -9,5 +9,4 @@ public class MeTooTravelApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MeTooTravelApplication.class, args);
 	}
-
 }
