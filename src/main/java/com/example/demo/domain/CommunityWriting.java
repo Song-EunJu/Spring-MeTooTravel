@@ -9,7 +9,7 @@ public class CommunityWriting {
     private String content; // 글 내용
     private Date currentTime; // 현재시간
     private int like; // 좋아요 개수
-    private int delete; // 삭제 여부
+    private int delete; // 삭제 여부 --> 0이면 삭제안한 것, 1이면 삭제한 것
 
     public Long getId() {
         return id;
