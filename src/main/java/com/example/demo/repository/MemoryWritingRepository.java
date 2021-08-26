@@ -23,6 +23,13 @@ public class MemoryWritingRepository implements WritingRepository{
     }
 
     @Override
+    public Optional<CommunityWriting> findByEmail(String email) {
+        return store.values().stream()
+                .filter(writing -> writing.getTitle().equals(email))
+                .findAny();
+    }
+
+    @Override
     public List<CommunityWriting> findPopular() {
         Map<Long,CommunityWriting> temp = new HashMap<>(store);
         //  이제 여기서 temp를 좋아요 내림차순 정렬 ->  map communitywriting에서 getLike 해서 정렬
@@ -62,6 +69,12 @@ public class MemoryWritingRepository implements WritingRepository{
         }
         return new ArrayList<>(topPopular.values()); // 이 temp가 좋아요 내림차순 정렬된 5개가 담긴 map
     }
+
+    @Override
+    public List<CommunityWriting> findAllWriting(){
+        return new ArrayList<>(store.values());
+    }
+
     public void clearStore(){
         store.clear();
     }
