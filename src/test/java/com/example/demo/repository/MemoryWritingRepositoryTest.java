@@ -35,6 +35,41 @@ public class MemoryWritingRepositoryTest {
     }
 
     @Test
+    public void findKeyword(){
+        CommunityWriting cw1 = new CommunityWriting();
+        cw1.setEmail("이메일1");
+        cw1.setTitle("여행조앙");
+        cw1.setContent("글 내용1");
+        cw1.setCurrentTime(new Date(2017,10,22));
+        cw1.setLike(1);
+        cw1.setDelete(0);
+        repository.save(cw1);
+
+        CommunityWriting cw2 = new CommunityWriting();
+        cw2.setEmail("이메일2");
+        cw2.setTitle("해외여행");
+        cw2.setContent("글 내용2");
+        cw2.setCurrentTime(new Date(2017,10,22));
+        cw2.setLike(2);
+        cw2.setDelete(0);
+        repository.save(cw2);
+
+        CommunityWriting cw3 = new CommunityWriting();
+        cw3.setEmail("이메일3");
+        cw3.setTitle("미국갈래");
+        cw3.setContent("글 내용3");
+        cw3.setCurrentTime(new Date(2017,10,22));
+        cw3.setLike(3);
+        cw3.setDelete(0);
+        repository.save(cw3);
+
+        List<CommunityWriting> result = repository.findByKeyword("여행");
+        for(CommunityWriting cw : result){
+            System.out.println("글 제목:"+cw.getTitle());
+        }
+    }
+
+    @Test
     public void findPopular(){
         CommunityWriting cw1 = new CommunityWriting();
         cw1.setEmail("이메일1");
@@ -112,5 +147,38 @@ public class MemoryWritingRepositoryTest {
         for(CommunityWriting cw : result){
             System.out.println("cw.getLike() = " + cw.getLike());
         }
+    }
+
+    @Test
+    public void findAllWriting(){
+        CommunityWriting cw1 = new CommunityWriting();
+        cw1.setEmail("이메일1");
+        cw1.setTitle("글 제목1");
+        cw1.setContent("글 내용1");
+        cw1.setCurrentTime(new Date(2017,10,22));
+        cw1.setLike(1);
+        cw1.setDelete(0);
+        repository.save(cw1);
+
+        CommunityWriting cw2 = new CommunityWriting();
+        cw2.setEmail("이메일2");
+        cw2.setTitle("글 제목2");
+        cw2.setContent("글 내용2");
+        cw2.setCurrentTime(new Date(2017,10,22));
+        cw2.setLike(2);
+        cw2.setDelete(0);
+        repository.save(cw2);
+
+        CommunityWriting cw3 = new CommunityWriting();
+        cw3.setEmail("이메일3");
+        cw3.setTitle("글 제목3");
+        cw3.setContent("글 내용3");
+        cw3.setCurrentTime(new Date(2017,10,22));
+        cw3.setLike(3);
+        cw3.setDelete(0);
+        repository.save(cw3);
+
+        List<CommunityWriting> result = repository.findAllWriting();
+        System.out.println("result.size() = " + result.size());
     }
 }

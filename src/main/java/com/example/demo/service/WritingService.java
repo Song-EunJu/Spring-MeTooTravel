@@ -1,22 +1,16 @@
 package com.example.demo.service;
 
 import com.example.demo.domain.CommunityWriting;
-import com.example.demo.repository.MemoryWritingRepository;
 import com.example.demo.repository.WritingRepository;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class WritingService {
-    private final WritingRepository writingRepository = new MemoryWritingRepository();
+    private final WritingRepository writingRepository;
 
-    // 글 등록
-
-
-    // 제목으로 글 찾기
-    public Optional<CommunityWriting> findOneWriting(String title){
-        return writingRepository.findByTitle(title);
+    public WritingService(WritingRepository writingRepository) {
+        this.writingRepository = writingRepository;
     }
 
     // 자신이 적은 모든 글 찾아오기
