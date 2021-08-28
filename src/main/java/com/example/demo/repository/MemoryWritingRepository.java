@@ -1,6 +1,7 @@
 package com.example.demo.repository;
 
 import com.example.demo.domain.CommunityWriting;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 import java.util.stream.Collectors;
