@@ -21,7 +21,7 @@ public class WritingService {
         return
     }
 
-    // 글 등록하기기
+    // 글 등록하기
    public Long join(Member member){
         validateDuplicateMember(member); // 중복회원검증
         memberRepository.save(member);
@@ -34,8 +34,6 @@ public class WritingService {
                     throw new IllegalStateException("이미 존재하는 회원입니다");
                 });
     }
-
-
 
 
     // 자신이 적은 모든 글 찾아오기
