@@ -3,24 +3,22 @@ package com.example.demo.service;
 import com.example.demo.domain.CommunityWriting;
 import com.example.demo.repository.MemoryWritingRepository;
 import com.example.demo.repository.WritingRepository;
-import org.aspectj.lang.annotation.Before;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
 
-class WritingServiceTest {
+@SpringBootTest
+@Transactional
+class WritingServiceIntegrationTest {
     
-    WritingService writingService;
-    WritingRepository writingRepository;
-
-    @BeforeEach()
-    public void beforeEach() {
-        writingRepository = new MemoryWritingRepository();
-        writingService = new WritingService(writingRepository);
-    }
+    @Autowired WritingService writingService;
+    @Autowired WritingRepository writingRepository;
 
     // 글 등록하기
     @Test
@@ -38,7 +36,6 @@ class WritingServiceTest {
         CommunityWriting findWriting = writingService.findOne(id).get();
         Assertions.assertThat(cw1.getId()).isEqualTo(findWriting.getId());
     }
-
 
     @Test
     public void 내가적은모든글찾기(){

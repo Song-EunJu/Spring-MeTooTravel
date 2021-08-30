@@ -18,6 +18,11 @@ public class MemoryWritingRepository implements WritingRepository{
     }
 
     @Override
+    public Optional<CommunityWriting> findById(Long id) {
+        return Optional.ofNullable(store.get(id)); // store.get(id)가 null이어도 감쌀 수 있다.
+    }
+
+    @Override
     public Optional<CommunityWriting> findByTitle(String title) {
         return store.values().stream()
                 .filter(writing -> writing.getTitle().equals(title))
