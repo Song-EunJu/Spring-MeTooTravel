@@ -28,7 +28,10 @@ public class JpaWritingRepository implements WritingRepository{
 
     @Override
     public Optional<CommunityWriting> findByTitle(String title) {
-        return Optional.empty();
+        List<CommunityWriting> result = em.createQuery("select m from CommunityWriting m where m.title = :title", CommunityWriting.class)
+                .setParameter("title", title)
+                .getResultList();
+        return result.stream().findAny();
     }
 
     @Override
@@ -38,7 +41,10 @@ public class JpaWritingRepository implements WritingRepository{
 
     @Override
     public Optional<CommunityWriting> findByEmail(String email) {
-        return Optional.empty();
+        List<CommunityWriting> result = em.createQuery("select m from CommunityWriting m where m.title = :title", CommunityWriting.class)
+                .setParameter("email", email)
+                .getResultList();
+        return result.stream().
     }
 
     @Override
