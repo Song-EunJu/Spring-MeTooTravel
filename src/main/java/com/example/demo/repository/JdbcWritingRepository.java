@@ -1,4 +1,5 @@
 //package com.example.demo.repository;
+//import com.example.demo.domain.CommunityWriting;
 //import org.springframework.jdbc.datasource.DataSourceUtils;
 //import javax.sql.DataSource;
 //import java.sql.*;
@@ -12,8 +13,9 @@
 //    public JdbcMemberRepository(DataSource dataSource) {
 //        this.dataSource = dataSource;
 //    }
+//
 //    @Override
-//    public Member save(Member member) {
+//    public CommunityWriting save(CommunityWriting member) {
 //        String sql = "insert into member(name) values(?)";
 //        Connection conn = null;
 //        PreparedStatement pstmt = null;
