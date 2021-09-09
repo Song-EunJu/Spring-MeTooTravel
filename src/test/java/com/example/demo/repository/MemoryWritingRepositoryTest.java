@@ -24,7 +24,7 @@ public class MemoryWritingRepositoryTest {
         cw1.setEmail("이메일1");
         cw1.setTitle("글 제목1");
         cw1.setContent("글 내용1");
-        cw1.setCurrentTime(new Date(2017,10,22));
+//        cw1.setCurrentTime(new Date(2017,10,22));
         cw1.setLike(1);
         cw1.setDelete(0);
 
@@ -40,7 +40,7 @@ public class MemoryWritingRepositoryTest {
         cw1.setEmail("이메일1");
         cw1.setTitle("여행조앙");
         cw1.setContent("글 내용1");
-        cw1.setCurrentTime(new Date(2017,10,22));
+//        cw1.setCurrentTime(new Date(2017,10,22));
         cw1.setLike(1);
         cw1.setDelete(0);
         repository.save(cw1);
@@ -49,7 +49,7 @@ public class MemoryWritingRepositoryTest {
         cw2.setEmail("이메일2");
         cw2.setTitle("해외여행");
         cw2.setContent("글 내용2");
-        cw2.setCurrentTime(new Date(2017,10,22));
+//        cw2.setCurrentTime(new Date(2017,10,22));
         cw2.setLike(2);
         cw2.setDelete(0);
         repository.save(cw2);
@@ -58,7 +58,7 @@ public class MemoryWritingRepositoryTest {
         cw3.setEmail("이메일3");
         cw3.setTitle("미국갈래");
         cw3.setContent("글 내용3");
-        cw3.setCurrentTime(new Date(2017,10,22));
+//        cw3.setCurrentTime(new Date(2017,10,22));
         cw3.setLike(3);
         cw3.setDelete(0);
         repository.save(cw3);
@@ -75,7 +75,7 @@ public class MemoryWritingRepositoryTest {
         cw1.setEmail("이메일1");
         cw1.setTitle("글 제목1");
         cw1.setContent("글 내용1");
-        cw1.setCurrentTime(new Date(2017,10,22));
+//        cw1.setCurrentTime(new Date(2017,10,22));
         cw1.setLike(1);
         cw1.setDelete(0);
         repository.save(cw1);
@@ -84,7 +84,7 @@ public class MemoryWritingRepositoryTest {
         cw2.setEmail("이메일2");
         cw2.setTitle("글 제목2");
         cw2.setContent("글 내용2");
-        cw2.setCurrentTime(new Date(2017,10,22));
+//        cw2.setCurrentTime(new Date(2017,10,22));
         cw2.setLike(2);
         cw2.setDelete(0);
         repository.save(cw2);
@@ -93,7 +93,7 @@ public class MemoryWritingRepositoryTest {
         cw3.setEmail("이메일3");
         cw3.setTitle("글 제목3");
         cw3.setContent("글 내용3");
-        cw3.setCurrentTime(new Date(2017,10,22));
+//        cw3.setCurrentTime(new Date(2017,10,22));
         cw3.setLike(3);
         cw3.setDelete(0);
         repository.save(cw3);
@@ -102,7 +102,7 @@ public class MemoryWritingRepositoryTest {
         cw4.setEmail("이메일4");
         cw4.setTitle("글 제목4");
         cw4.setContent("글 내용4");
-        cw4.setCurrentTime(new Date(2017,10,22));
+//        cw4.setCurrentTime(new Date(2017,10,22));
         cw4.setLike(4);
         cw4.setDelete(0);
         repository.save(cw4);
@@ -111,7 +111,7 @@ public class MemoryWritingRepositoryTest {
         cw5.setEmail("이메일5");
         cw5.setTitle("글 제목5");
         cw5.setContent("글 내용5");
-        cw5.setCurrentTime(new Date(2017,10,22));
+//        cw5.setCurrentTime(new Date(2017,10,22));
         cw5.setLike(5);
         cw5.setDelete(0);
         repository.save(cw5);
@@ -120,7 +120,7 @@ public class MemoryWritingRepositoryTest {
         cw6.setEmail("이메일6");
         cw6.setTitle("글 제목6");
         cw6.setContent("글 내용6");
-        cw6.setCurrentTime(new Date(2017,10,22));
+//        cw6.setCurrentTime(new Date(2017,10,22));
         cw6.setLike(6);
         cw6.setDelete(0);
         repository.save(cw6);
@@ -129,7 +129,7 @@ public class MemoryWritingRepositoryTest {
         cw7.setEmail("이메일7");
         cw7.setTitle("글 제목7");
         cw7.setContent("글 내용7");
-        cw7.setCurrentTime(new Date(2017,10,22));
+//        cw7.setCurrentTime(new Date(2017,10,22));
         cw7.setLike(7);
         cw7.setDelete(0);
         repository.save(cw7);
@@ -138,7 +138,7 @@ public class MemoryWritingRepositoryTest {
         cw8.setEmail("이메일8");
         cw8.setTitle("글 제목8");
         cw8.setContent("글 내용8");
-        cw8.setCurrentTime(new Date(2017,10,22));
+//        cw8.setCurrentTime(new Date(2017,10,22));
         cw8.setLike(8);
         cw8.setDelete(0);
         repository.save(cw8);
@@ -155,7 +155,7 @@ public class MemoryWritingRepositoryTest {
         cw1.setEmail("이메일1");
         cw1.setTitle("글 제목1");
         cw1.setContent("글 내용1");
-        cw1.setCurrentTime(new Date(2017,10,22));
+//        cw1.setCurrentTime(new Date(2017,10,22));
         cw1.setLike(1);
         cw1.setDelete(0);
         repository.save(cw1);
@@ -164,7 +164,7 @@ public class MemoryWritingRepositoryTest {
         cw2.setEmail("이메일2");
         cw2.setTitle("글 제목2");
         cw2.setContent("글 내용2");
-        cw2.setCurrentTime(new Date(2017,10,22));
+//        cw2.setCurrentTime(new Date(2017,10,22));
         cw2.setLike(2);
         cw2.setDelete(0);
         repository.save(cw2);
@@ -173,7 +173,7 @@ public class MemoryWritingRepositoryTest {
         cw3.setEmail("이메일3");
         cw3.setTitle("글 제목3");
         cw3.setContent("글 내용3");
-        cw3.setCurrentTime(new Date(2017,10,22));
+//        cw3.setCurrentTime(new Date(2017,10,22));
         cw3.setLike(3);
         cw3.setDelete(0);
         repository.save(cw3);

@@ -4,17 +4,18 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.util.Date;
 
 @Entity
 public class CommunityWriting {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id; // 글 번호
+
     private String email; // 작성자 이메일
     private String title; // 글 제목
     private String content; // 글 내용
-    private Date currentTime; // 현재시간
+//    private Date currentTime; // 현재시간
     private int like; // 좋아요 개수
     private int delete; // 삭제 여부 --> 0이면 삭제안한 것, 1이면 삭제한 것
 
@@ -50,13 +51,13 @@ public class CommunityWriting {
         this.content = content;
     }
 
-    public Date getCurrentTime() {
-        return currentTime;
-    }
-
-    public void setCurrentTime(Date currentTime) {
-        this.currentTime = currentTime;
-    }
+//    public Date getCurrentTime() {
+//        return currentTime;
+//    }
+//
+//    public void setCurrentTime(Date currentTime) {
+//        this.currentTime = currentTime;
+//    }
 
     public int getLike() {
         return like;

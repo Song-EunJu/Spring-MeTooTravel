@@ -11,7 +11,6 @@ public interface WritingRepository {
     Optional<CommunityWriting> findByTitle(String title); // 글 제목으로 찾기 (글제목이 중복이 아니라고 가정)
     List<CommunityWriting> findByKeyword(String keyword); // 키워드가 들어간 글들 찾기
     Optional<CommunityWriting> findByEmail(String email); // 특정 이메일로 찾기
-    List<CommunityWriting> findPopular();     // 인기글 5개만 불러오기
-    List<CommunityWriting> findAllWriting();    // 커뮤니티 글 모두 불러오기
-
+//    List<CommunityWriting> findPopular();     // 인기글 5개만 불러오기
+//    List<CommunityWriting> findAllWriting();    // 커뮤니티 글 모두 불러오기
 }

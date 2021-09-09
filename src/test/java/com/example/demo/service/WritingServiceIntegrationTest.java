@@ -22,12 +22,12 @@ class WritingServiceIntegrationTest {
 
     // 글 등록하기
     @Test
-    public void 글생성(){
+    void 글생성(){
         CommunityWriting cw1 = new CommunityWriting();
         cw1.setEmail("이메일1");
         cw1.setTitle("글 제목1");
         cw1.setContent("글 내용1");
-        cw1.setCurrentTime(new Date(2017,10,22));
+//        cw1.setCurrentTime(new Date(2017,10,22));
         cw1.setLike(1);
         cw1.setDelete(0);
 
@@ -43,7 +43,7 @@ class WritingServiceIntegrationTest {
         cw1.setEmail("이메일1");
         cw1.setTitle("글 제목1");
         cw1.setContent("글 내용1");
-        cw1.setCurrentTime(new Date(2017,10,22));
+//        cw1.setCurrentTime(new Date(2017,10,22));
         cw1.setLike(1);
         cw1.setDelete(0);
         writingRepository.save(cw1);
@@ -52,7 +52,7 @@ class WritingServiceIntegrationTest {
         cw2.setEmail("이메일1");
         cw2.setTitle("글 제목2");
         cw2.setContent("글 내용2");
-        cw2.setCurrentTime(new Date(2017,10,22));
+//        cw2.setCurrentTime(new Date(2017,10,22));
         cw2.setLike(3);
         cw2.setDelete(0);
         writingRepository.save(cw2);
@@ -61,7 +61,7 @@ class WritingServiceIntegrationTest {
         cw3.setEmail("이메일2");
         cw3.setTitle("글 제목3");
         cw3.setContent("글 내용3");
-        cw3.setCurrentTime(new Date(2017,10,22));
+//        cw3.setCurrentTime(new Date(2017,10,22));
         cw3.setLike(3);
         cw3.setDelete(0);
         writingRepository.save(cw3);

@@ -10,13 +10,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller
 public class CommunityController {
-
-    private final WritingService writingService;
+    private WritingService writingService;
 
     @Autowired
     public CommunityController(WritingService writingService) {
@@ -44,11 +42,11 @@ public class CommunityController {
         return "community/writingList";
     }
 
-    @RequestMapping("/android")
-    public void androidTestWithRequest(HttpServletRequest request){
-        System.out.println(request.getParameter("title"));
-        System.out.println(request.getParameter("content"));
-    }
+//    @RequestMapping("/android")
+//    public void androidTestWithRequest(HttpServletRequest request){
+//        System.out.println(request.getParameter("title"));
+//        System.out.println(request.getParameter("content"));
+//    }
 
 }
 
